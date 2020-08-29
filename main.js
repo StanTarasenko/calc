@@ -1,25 +1,18 @@
 function calc(sign) {
-    let num1, num2, result;
-
-
-
-    num1 = document.getElementById('n1').value;
-    num1 = parseInt(num1);
-    num2 = document.getElementById('n2').value;
-    num2 = parseInt(num2);
+    let num1 = parseInt(document.getElementById('n1').value);
+    let num2 = parseInt(document.getElementById('n2').value);
     switch (sign) {
         case '+':
-            result = num1+num2;
+            document.getElementById('out').innerHTML = num1+num2;
             break;
         case '-':
-            result = num1-num2;
+            document.getElementById('out').innerHTML = num1-num2;
             break;
         case '/':
-            result = num1/num2;
+            document.getElementById('out').innerHTML = num1/num2;
             break;
         case '*':
-            result = num1*num2;
+            document.getElementById('out').innerHTML = num1*num2;
             break;
     }
-    document.getElementById('out').innerHTML = result;
 }
