@@ -1,25 +1,22 @@
-function calc(sign) {
-    let num1, num2, result;
+const num1 = parseInt(window.prompt("Enter the first number"));
+const num2 =  parseInt(window.prompt("Enter the second number"));
+const sign = window.prompt("Enter the sign");
+let result;
 
-
-
-    num1 = document.getElementById('n1').value;
-    num1 = parseInt(num1);
-    num2 = document.getElementById('n2').value;
-    num2 = parseInt(num2);
-    switch (sign) {
-        case '+':
-            result = num1+num2;
-            break;
-        case '-':
-            result = num1-num2;
-            break;
-        case '/':
-            result = num1/num2;
-            break;
-        case '*':
-            result = num1*num2;
-            break;
-    }
-    document.getElementById('out').innerHTML = result;
+switch (sign) {
+    case '+':
+        result = num1+num2;
+        break;
+    case '-':
+        result = num1-num2;
+        break;
+    case '/':
+        result = num1/num2;
+        break;
+    case '*':
+        result = num1*num2;
+        break;
 }
+
+
+window.alert("This is the result " + result);
